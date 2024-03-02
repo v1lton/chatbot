@@ -1,33 +1,99 @@
 version: "3.1"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - atis_abbreviation
+  - atis_airfare
+  - atis_quantity
+  - atis_ground_service
+  - atis_airline
+  - atis_flight_time
+  - atis_aircraft
+  - atis_flight
+  - other
 
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+entities:
+  - flight_time
+  - fromloc.state_code
+  - flight_number
+  - connect
+  - flight_stop
+  - toloc.airport_name
+  - arrive_date.today_relative
+  - airline_name
+  - arrive_date.date_relative
+  - meal_description
+  - airport_name
+  - or
+  - stoploc.city_name
+  - depart_date.month_name
+  - cost_relative
+  - flight_days
+  - toloc.city_name
+  - flight_mod
+  - toloc.country_name
+  - city_name
+  - arrive_time.start_time
+  - airport_code
+  - return_date.day_name
+  - fromloc.airport_code
+  - day_number
+  - depart_date.day_number
+  - fare_basis_code
+  - state_name
+  - state_code
+  - depart_time.start_time
+  - arrive_time.time
+  - arrive_date.day_name
+  - restriction_code
+  - fare_amount
+  - return_date.month_name
+  - stoploc.airport_name
+  - fromloc.airport_name
+  - airline_code
+  - arrive_time.time_relative
+  - economy
+  - fromloc.city_name
+  - arrive_time.end_time
+  - mod
+  - return_date.date_relative
+  - depart_time.time
+  - return_date.today_relative
+  - depart_time.time_relative
+  - month_name
+  - aircraft_code
+  - arrive_date.day_number
+  - transport_type
+  - days_code
+  - arrive_date.month_name
+  - arrive_time.period_of_day
+  - depart_date.date_relative
+  - meal
+  - return_date.day_number
+  - depart_date.today_relative
+  - toloc.state_code
+  - fromloc.state_name
+  - today_relative
+  - arrive_time.period_mod
+  - period_of_day
+  - toloc.airport_code
+  - toloc.state_name
+  - depart_time.end_time
+  - time_relative
+  - return_time.period_of_day
+  - day_name
+  - meal_code
+  - stoploc.state_code
+  - depart_time.period_mod
+  - depart_date.year
+  - round_trip
+  - depart_time.period_of_day
+  - time
+  - depart_date.day_name
+  - class_type
+  - return_time.period_mod
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+actions:
+  - action_search_qa
 
 session_config:
   session_expiration_time: 60
