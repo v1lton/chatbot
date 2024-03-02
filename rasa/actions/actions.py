@@ -1,4 +1,5 @@
 from typing import Any, Text, Dict, List
+
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import typesense
@@ -10,7 +11,7 @@ class ActionSearchQA(Action):
     async def run(
         self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]
     ) -> List[Dict[Text, Any]]:
-        
+
         client = typesense.Client({
             'nodes': [{
                 'host': 'yq1596od2mxi47vhp-1.a1.typesense.net',
