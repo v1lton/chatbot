@@ -26,12 +26,12 @@ rules:
   # Then submit the form
   - action: action_flights_search
 
-# intents not used
-
-- rule: atis_abbreviation not ready
+- rule: Atis Abbreviation asks to GPT
   steps:
   - intent: atis_abbreviation
-  - action: utter_intention_not_ready
+  - action: action_connect_to_gpt
+
+# intents not used
 
 - rule: atis_airfare not ready
   steps:

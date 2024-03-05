@@ -95,6 +95,7 @@ entities:
 actions:
   - action_search_qa
   - action_flights_search
+  - action_connect_to_gpt
 
 slots:
   fromloc.city_name:
@@ -103,7 +104,6 @@ slots:
     mappings:
     - type: from_entity
       entity: fromloc.city_name
-    - type: from_text
   toloc.city_name:
     type: text
     influence_conversation: true
