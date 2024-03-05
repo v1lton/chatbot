@@ -95,6 +95,48 @@ entities:
 actions:
   - action_search_qa
 
+slots:
+  fromloc.city_name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: fromloc.city_name
+    - type: from_text
+  toloc.city_name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: toloc.city_name
+  depart_date.day_name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: depart_date.day_name
+
+forms:
+  flight_form:
+    required_slots:
+      - fromloc.city_name
+      - toloc.city_name
+      - depart_date.day_name
+
+responses:
+  utter_submit:
+  - text: I will now search for flights!
+  utter_flights_slots:
+  - text: I will search for flights from {fromloc.city_name} to {toloc.city_name} on {depart_date.day_name}.
+  utter_ask_fromloc.city_name:
+  - text: Where is the origin of your flight?
+  utter_ask_toloc.city_name:
+  - text: Where is the destination of your flight?
+  utter_ask_depart_date.day_name:
+  - text: What day of the week are you planning to travel?
+  utter_intention_not_ready:
+  - text: I can't help you with that, I'm sorry :(
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
