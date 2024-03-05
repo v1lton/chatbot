@@ -94,6 +94,7 @@ entities:
 
 actions:
   - action_search_qa
+  - action_flights_search
 
 slots:
   fromloc.city_name:

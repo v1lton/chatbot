@@ -24,8 +24,7 @@ rules:
   - slot_was_set:
     - requested_slot: null
   # Then submit the form
-  - action: utter_submit
-  - action: utter_flights_slots_values
+  - action: action_flights_search
 
 # intents not used
 
