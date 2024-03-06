@@ -1,0 +1,55 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_flight_time\"}}]": "utter_intention_not_ready",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_flight_time\"}}, {\"prev_action\": {\"action_name\": \"utter_intention_not_ready\"}, \"user\": {\"intent\": \"atis_flight_time\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"flight_form\"}}]": "action_flights_search",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"flight_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_flights_search\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"other\"}}]": "action_search_qa",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"other\"}}, {\"prev_action\": {\"action_name\": \"action_search_qa\"}, \"user\": {\"intent\": \"other\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_abbreviation\"}}]": "action_connect_to_gpt",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_abbreviation\"}}, {\"prev_action\": {\"action_name\": \"action_connect_to_gpt\"}, \"user\": {\"intent\": \"atis_abbreviation\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_airfare\"}}]": "utter_intention_not_ready",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_airfare\"}}, {\"prev_action\": {\"action_name\": \"utter_intention_not_ready\"}, \"user\": {\"intent\": \"atis_airfare\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_aircraft\"}}]": "utter_intention_not_ready",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_aircraft\"}}, {\"prev_action\": {\"action_name\": \"utter_intention_not_ready\"}, \"user\": {\"intent\": \"atis_aircraft\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_flight\"}}]": "flight_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_flight\"}}, {\"active_loop\": {\"name\": \"flight_form\"}, \"prev_action\": {\"action_name\": \"flight_form\"}, \"user\": {\"intent\": \"atis_flight\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_ground_service\"}}]": "utter_intention_not_ready",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_ground_service\"}}, {\"prev_action\": {\"action_name\": \"utter_intention_not_ready\"}, \"user\": {\"intent\": \"atis_ground_service\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_airline\"}}]": "utter_intention_not_ready",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_airline\"}}, {\"prev_action\": {\"action_name\": \"utter_intention_not_ready\"}, \"user\": {\"intent\": \"atis_airline\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [
+      "flight_form"
+    ],
+    "rules_for_loop_unhappy_path": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"flight_form\"}, \"prev_action\": {\"action_name\": \"flight_form\"}, \"user\": {\"intent\": \"atis_flight\"}}]": "do_not_predict_loop_action"
+    },
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_flight\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_airfare\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"flight_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_flights_search\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_airline\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_airline\"}}, {\"prev_action\": {\"action_name\": \"utter_intention_not_ready\"}, \"user\": {\"intent\": \"atis_airline\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_flight_time\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"other\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_flight_time\"}}, {\"prev_action\": {\"action_name\": \"utter_intention_not_ready\"}, \"user\": {\"intent\": \"atis_flight_time\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_abbreviation\"}}, {\"prev_action\": {\"action_name\": \"action_connect_to_gpt\"}, \"user\": {\"intent\": \"atis_abbreviation\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_aircraft\"}}]",
+      "handling active loops and forms - flight_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_ground_service\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"flight_form\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_ground_service\"}}, {\"prev_action\": {\"action_name\": \"utter_intention_not_ready\"}, \"user\": {\"intent\": \"atis_ground_service\"}}]",
+      "handling active loops and forms - flight_form - action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_airfare\"}}, {\"prev_action\": {\"action_name\": \"utter_intention_not_ready\"}, \"user\": {\"intent\": \"atis_airfare\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_aircraft\"}}, {\"prev_action\": {\"action_name\": \"utter_intention_not_ready\"}, \"user\": {\"intent\": \"atis_aircraft\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"other\"}}, {\"prev_action\": {\"action_name\": \"action_search_qa\"}, \"user\": {\"intent\": \"other\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"atis_abbreviation\"}}]"
+    ]
+  }
+}

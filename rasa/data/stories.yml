@@ -14,6 +14,10 @@ stories:
     - toloc.city_name: "dallas"
   - action: utter_asks_for_day
   - intent: day
+    entities:
+    - depart_date.day_name: "monday"
+  - slot_was_set:
+    - depart_date.day_name: "monday"
   - action: utter_confirm_flight_and_day
   - intent: confirm
   - action: action_flights_count
@@ -30,6 +34,10 @@ stories:
     - toloc.city_name: "dallas"
   - action: utter_asks_for_day
   - intent: day
+    entities:
+    - depart_date.day_name: "monday"
+  - slot_was_set:
+    - depart_date.day_name: "monday"
   - action: utter_confirm_flight_and_day
   - intent: deny
-  - action: utter_repeat
+  - action: action_restart_conversation

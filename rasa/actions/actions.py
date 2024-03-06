@@ -2,7 +2,7 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, Restarted
 
 import typesense
 import pandas as pd
@@ -50,7 +50,7 @@ class ActionSearchQA(Action):
         else:
             dispatcher.utter_message(text="Sorry, I couldn't find an answer to that question.")
 
-        return []
+        return [Restarted()]
     
 class ActionFlightsSearch(Action):
     """
@@ -84,7 +84,7 @@ class ActionFlightsSearch(Action):
         dispatcher.utter_message(text=response)
 
         # Reset the slots
-        return [SlotSet("fromloc.city_name", None), SlotSet("toloc.city_name", None), SlotSet("depart_date.day_name", None)]
+        return [Restarted()]
     
 class ActionFlightsCount(Action):
     """
@@ -110,7 +110,7 @@ class ActionFlightsCount(Action):
 
         # If there are flights, return the count. Otherwise, return a message saying that no flights were found.
         if flights.shape[0] > 0:
-            response = "There are " + len(flights) + " flights available for that route on that day."
+            response = "There are " + str(len(flights)) + " flights available for that route on that day."
         else:
             response = "I couldn't find any flights for that route on that day."
 
@@ -118,7 +118,7 @@ class ActionFlightsCount(Action):
         dispatcher.utter_message(text=response)
 
         # Reset the slots
-        return [SlotSet("fromloc.city_name", None), SlotSet("toloc.city_name", None), SlotSet("depart_date.day_name", None)]
+        return [Restarted()]
     
 class ActionConnectToGPT(Action):
     """
@@ -149,4 +149,18 @@ class ActionConnectToGPT(Action):
         # Send the response to the user
         dispatcher.utter_message(response.choices[0].message.content)
         
-        return []
+        return [Restarted()]
+    
+class ActionRestartConversation(Action):
+    """
+    This action restarts the conversation.
+    """
+    def name(self) -> Text:
+        return "action_restart_conversation"
+
+    async def run(
+        self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]
+    ) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("Oh, sorry. Could you please try again?")
+        
+        return [Restarted()]

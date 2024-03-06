@@ -5010,7 +5010,7 @@ nlu:
     - y
     - yep
 
-- intent: denny
+- intent: deny
   examples: |
     - no
     - no thanks
@@ -5057,3 +5057,4 @@ nlu:
     - I would like too know flights on [friday](depart_date.day_name)
     - I would like too know flights on [saturday](depart_date.day_name)
     - I would like too know flights on [sunday](depart_date.day_name)
+    

@@ -100,6 +100,7 @@ actions:
   - action_flights_search
   - action_connect_to_gpt
   - action_flights_count
+  - action_restart_conversation
 
 slots:
   fromloc.city_name:
@@ -129,10 +130,6 @@ forms:
       - depart_date.day_name
 
 responses:
-  utter_submit:
-  - text: I will now search for flights!
-  utter_flights_slots:
-  - text: I will search for flights from {fromloc.city_name} to {toloc.city_name} on {depart_date.day_name}.
   utter_ask_fromloc.city_name:
   - text: Where is the origin of your flight?
   utter_ask_toloc.city_name:
@@ -141,8 +138,6 @@ responses:
   - text: What day of the week are you planning to travel?
   utter_intention_not_ready:
   - text: I can't help you with that, I'm sorry :(
-  utter_repeat:
-  - text: Oh, sorry. Could you please try again?
   utter_asks_for_day:
   - text: What day of the week do you want to know?
   utter_confirm_flight_and_day:
