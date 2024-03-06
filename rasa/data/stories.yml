@@ -2,29 +2,20 @@ version: "3.1"
 
 stories:
 
-# - story: happy path
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_great
-#   - action: utter_happy
+- story: User asks for how many flights are available happy path
+  steps:
+  - intent: atis_quantity
+  - action: utter_asks_for_day
+  - intent: day
+  - action: utter_confirm_flight_and_day
+  - intent: confirm
+  - action: action_flights_count
 
-# - story: sad path 1
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: affirm
-#   - action: utter_happy
-
-# - story: sad path 2
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: utter_goodbye
+- story: User asks for how many flights are available sad path
+  steps:
+  - intent: atis_quantity
+  - action: utter_asks_for_day
+  - intent: day
+  - action: utter_confirm_flight_and_day
+  - intent: deny
+  - action: utter_repeat
