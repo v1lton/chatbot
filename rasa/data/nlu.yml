@@ -4992,3 +4992,35 @@ nlu:
     - no, that's not what I want
     - no, that's not what I meant
     - no, that's not what I asked for
+
+- intent: day
+  examples: |
+    - [monday](depart_date.day_name)
+    - [tuesday](depart_date.day_name)
+    - [wednesday](depart_date.day_name)
+    - [thursday](depart_date.day_name)
+    - [friday](depart_date.day_name)
+    - [saturday](depart_date.day_name)
+    - [sunday](depart_date.day_name)
+    - on [monday](depart_date.day_name)
+    - on [tuesday](depart_date.day_name)
+    - on [wednesday](depart_date.day_name)
+    - on [thursday](depart_date.day_name)
+    - on [friday](depart_date.day_name)
+    - on [saturday](depart_date.day_name)
+    - on [sunday](depart_date.day_name)
+    - I want to see flights on [monday](depart_date.day_name)
+    - I want to see flights on [tuesday](depart_date.day_name)
+    - I want to see flights on [wednesday](depart_date.day_name)
+    - I want to see flights on [thursday](depart_date.day_name)
+    - I want to see flights on [friday](depart_date.day_name)
+    - I want to see flights on [saturday](depart_date.day_name)
+    - I want to see flights on [sunday](depart_date.day_name)
+    - I want to see flights on [monday](depart_date.day_name) please
+    - I would like too know flights on [monday](depart_date.day_name)
+    - I would like too know flights on [tuesday](depart_date.day_name)
+    - I would like too know flights on [wednesday](depart_date.day_name)
+    - I would like too know flights on [thursday](depart_date.day_name)
+    - I would like too know flights on [friday](depart_date.day_name)
+    - I would like too know flights on [saturday](depart_date.day_name)
+    - I would like too know flights on [sunday](depart_date.day_name)

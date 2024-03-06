@@ -31,8 +31,6 @@ rules:
   - intent: atis_abbreviation
   - action: action_connect_to_gpt
 
-# intents not used
-
 - rule: atis_airfare not ready
   steps:
   - intent: atis_airfare
