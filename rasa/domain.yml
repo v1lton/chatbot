@@ -10,6 +10,8 @@ intents:
   - atis_aircraft
   - atis_flight
   - other
+  - confirm
+  - deny
 
 entities:
   - flight_time

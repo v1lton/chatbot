@@ -4960,3 +4960,35 @@ nlu:
     - at does "pan-pan" mean?
     - What is "decision height" (DH)?
     - What is "angle of incidence"?
+
+- intent: confirm
+  examples: |
+    - yes
+    - sure
+    - absolutely
+    - of course
+    - yes please
+    - yes, that's correct
+    - yes, that's right
+    - yes, please
+    - that's right
+    - that's correct
+    - yeah
+    - y
+    - yep
+
+- intent: denny
+  examples: |
+    - no
+    - no thanks
+    - nopes
+    - n
+    - nope
+    - no, thanks
+    - no, thank you
+    - that's incorrect
+    - that's wrong
+    - no, that's wrong
+    - no, that's not what I want
+    - no, that's not what I meant
+    - no, that's not what I asked for
