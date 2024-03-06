@@ -5,6 +5,13 @@ stories:
 - story: User asks for how many flights are available happy path
   steps:
   - intent: atis_quantity
+    entities:
+    - fromloc.city_name: "boston"
+    - toloc.city_name: "dallas"
+  - slot_was_set:
+    - fromloc.city_name: "boston"
+  - slot_was_set:
+    - toloc.city_name: "dallas"
   - action: utter_asks_for_day
   - intent: day
   - action: utter_confirm_flight_and_day
@@ -14,6 +21,13 @@ stories:
 - story: User asks for how many flights are available sad path
   steps:
   - intent: atis_quantity
+    entities:
+    - fromloc.city_name: "boston"
+    - toloc.city_name: "dallas"
+  - slot_was_set:
+    - fromloc.city_name: "boston"
+  - slot_was_set:
+    - toloc.city_name: "dallas"
   - action: utter_asks_for_day
   - intent: day
   - action: utter_confirm_flight_and_day

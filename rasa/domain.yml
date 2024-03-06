@@ -12,6 +12,7 @@ intents:
   - other
   - confirm
   - deny
+  - day
 
 entities:
   - flight_time
