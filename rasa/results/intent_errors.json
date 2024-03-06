@@ -1,0 +1,42 @@
+[
+  {
+    "text": "which flight is a one way fare at 329 dollars from denver to pittsburgh",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.5635563731193542
+    }
+  },
+  {
+    "text": "show me all flights with fares from pittsburgh to san francisco",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.5624467134475708
+    }
+  },
+  {
+    "text": "i would like to fly to denver for under 500 dollars please show me the airfares between pittsburgh and denver",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.9846182465553284
+    }
+  },
+  {
+    "text": "what are the flights and prices from la to charlotte for monday morning",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.9661611318588257
+    }
+  },
+  {
+    "text": "show me first class round trip flights from new york to miami i want the cheapest first class fare please",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.5316513180732727
+    }
+  }
+]

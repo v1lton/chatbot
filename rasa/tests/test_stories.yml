@@ -2,90 +2,99 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-- story: happy path 1
+- story: search
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      What is a wet lease in aviation?
+    intent: search
+  - action: action_search_qa
 
-- story: happy path 2
+- story: activate flight form
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+      I want flights from san francisco
+    intent: atis_flight
+  - action: flight_form
+  - active_loop: flight_form
 
-- story: sad path 1
+- story: Test user asks for how many flights are available happy path
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
+      How many flights from boston to dallas?
+    intent: atis_quantity
+    entities:
+    - fromloc.city_name: "boston"
+    - toloc.city_name: "dallas"
+  - action: utter_asks_for_day
   - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      On monday
+    intent: day
+    entities:
+    - depart_date.day_name: "monday"
+  - action: utter_confirm_flight_and_day
   - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+      Yes
+    intent: confirm
+  - action: action_flights_count
 
-- story: sad path 2
+- story: Test user asks for how many flights are available sad path
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
+      How many flights from boston to dallas?
+    intent: atis_quantity
+    entities:
+    - fromloc.city_name: "boston"
+    - toloc.city_name: "dallas"
+  - action: utter_asks_for_day
   - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      On monday
+    intent: day
+    entities:
+    - depart_date.day_name: "monday"
+  - action: utter_confirm_flight_and_day
   - user: |
-      not really
+      No
     intent: deny
-  - action: utter_goodbye
+  - action: action_restart_conversation
 
-- story: sad path 3
+- story: Test atis abbreviation asks to GPT
+  steps:
+    - user: |
+        What is fare code h?
+      intent: atis_abbreviation
+    - action: action_connect_to_gpt
+
+- story: Test atis_airfare not ready
   steps:
   - user: |
-      hi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+      cheapest airfare from tacoma to orlando
+    intent: atis_airfare
+  - action: utter_intention_not_ready
 
-- story: say goodbye
+- story: Test atis_ground_service not ready
   steps:
   - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+      what kind of ground transportation is available in denver
+    intent: atis_ground_service
+  - action: utter_intention_not_ready
 
-- story: bot challenge
+- story: Test atis_airline not ready
   steps:
   - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot
+      which airline serves denver, pittsburgh and atlanta
+    intent: atis_airline
+  - action: utter_intention_not_ready
+
+- story: Test atis_flight_time not ready
+  steps:
+  - user: |
+      what is the arrival time in san francisco for the 755 am flight leaving washington
+    intent: atis_flight_time
+  - action: utter_intention_not_ready
+
+- story: Test atis_aircraft not ready
+  steps:
+  - user: |
+      what kind of aircraft is used on a flight from cleveland to dallas
+    intent: atis_aircraft
+  - action: utter_intention_not_ready

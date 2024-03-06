@@ -1,0 +1,51 @@
+version: "3.1"
+stories:
+- story: Test atis_aircraft not ready (./tests/test_stories.yml)
+  steps:
+  - intent: atis_aircraft  # predicted: atis_aircraft: what kind of aircraft is used on a flight from [cleveland](fromloc.city_name) to [dallas](toloc.city_name)
+  - action: utter_intention_not_ready
+- story: search (./tests/test_stories.yml)
+  steps:
+  - intent: search  # predicted: other: What is a wet lease in aviation?
+  - action: action_search_qa  # predicted: action_default_fallback
+- story: activate flight form (./tests/test_stories.yml)
+  steps:
+  - intent: atis_flight  # predicted: atis_flight: I want flights from [san francisco](fromloc.city_name)
+  - action: flight_form
+  - active_loop: flight_form
+- story: Test user asks for how many flights are available happy path (./tests/test_stories.yml)
+  steps:
+  - intent: atis_quantity  # predicted: atis_quantity: How many flights from [boston](fromloc.city_name) to [dallas](toloc.city_name)?
+  - action: utter_asks_for_day  # predicted: action_default_fallback
+  - intent: day  # predicted: day: On [monday](depart_date.day_name)
+  - action: utter_confirm_flight_and_day  # predicted: action_default_fallback
+  - intent: confirm
+  - action: action_flights_count  # predicted: action_default_fallback
+- story: Test user asks for how many flights are available sad path (./tests/test_stories.yml)
+  steps:
+  - intent: atis_quantity  # predicted: atis_quantity: How many flights from [boston](fromloc.city_name) to [dallas](toloc.city_name)?
+  - action: utter_asks_for_day  # predicted: action_default_fallback
+  - intent: day  # predicted: day: On [monday](depart_date.day_name)
+  - action: utter_confirm_flight_and_day  # predicted: action_default_fallback
+  - intent: deny
+  - action: action_restart_conversation  # predicted: action_default_fallback
+- story: Test atis abbreviation asks to GPT (./tests/test_stories.yml)
+  steps:
+  - intent: atis_abbreviation  # predicted: atis_abbreviation: What is fare code [h](fare_basis_code)?
+  - action: action_connect_to_gpt
+- story: Test atis_airfare not ready (./tests/test_stories.yml)
+  steps:
+  - intent: atis_airfare  # predicted: atis_airfare: [cheapest](cost_relative) airfare from [tacoma](fromloc.city_name) to [orlando](toloc.city_name)
+  - action: utter_intention_not_ready
+- story: Test atis_ground_service not ready (./tests/test_stories.yml)
+  steps:
+  - intent: atis_ground_service  # predicted: atis_ground_service: what kind of ground transportation is available in [denver](city_name)
+  - action: utter_intention_not_ready
+- story: Test atis_airline not ready (./tests/test_stories.yml)
+  steps:
+  - intent: atis_airline  # predicted: atis_airline: which airline serves [denver](fromloc.city_name), [pittsburgh](fromloc.city_name) and [atlanta](fromloc.city_name)
+  - action: utter_intention_not_ready
+- story: Test atis_flight_time not ready (./tests/test_stories.yml)
+  steps:
+  - intent: atis_flight_time  # predicted: atis_flight_time: what is the [arrival time](flight_time) in [san francisco](fromloc.city_name) for the [755 am](depart_time.time) flight leaving [washington](fromloc.city_name)
+  - action: utter_intention_not_ready
