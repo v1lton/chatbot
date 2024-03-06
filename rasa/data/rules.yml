@@ -1,0 +1,57 @@
+version: "3.1"
+
+rules:
+
+- rule: Search in typesense for other queries
+  steps:
+  - intent: other
+  - action: action_search_qa
+
+- rule: Activate flight Form
+  steps:
+  - intent: atis_flight
+  - action: flight_form
+  - active_loop: flight_form
+
+- rule: Submit flight Form
+  # Ensure that we're starting from an active loop
+  condition:
+  - active_loop: flight_form
+  steps:
+  - action: flight_form
+  # If there are no more requested slots
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # Then submit the form
+  - action: action_flights_search
+
+- rule: Atis Abbreviation asks to GPT
+  steps:
+  - intent: atis_abbreviation
+  - action: action_connect_to_gpt
+
+- rule: atis_airfare not ready
+  steps:
+  - intent: atis_airfare
+  - action: utter_intention_not_ready
+
+- rule: atis_ground_service not ready
+  steps:
+  - intent: atis_ground_service
+  - action: utter_intention_not_ready
+
+- rule: atis_airline not ready
+  steps:
+  - intent: atis_airline
+  - action: utter_intention_not_ready
+
+- rule: atis_flight_time not ready
+  steps:
+  - intent: atis_flight_time
+  - action: utter_intention_not_ready
+
+- rule: atis_aircraft not ready
+  steps:
+  - intent: atis_aircraft
+  - action: utter_intention_not_ready
