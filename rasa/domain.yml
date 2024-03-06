@@ -139,6 +139,8 @@ responses:
   - text: What day of the week are you planning to travel?
   utter_intention_not_ready:
   - text: I can't help you with that, I'm sorry :(
+  utter_goodbye:
+  - text: Oh, sorry. Then I can't help you with that. Goodbye!
 
 session_config:
   session_expiration_time: 60
