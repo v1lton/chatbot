@@ -33,7 +33,7 @@ cd rasa && rasa run actions
 
 Então, podemos conversar com o chatbot a partir de:
 ```
-cd rasa && shell
+cd rasa && rasa shell
 ```
 
 ### Actions
