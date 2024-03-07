@@ -22,11 +22,11 @@ class ActionSearchQA(Action):
         # Connect to Typesense
         client = typesense.Client({
             'nodes': [{
-                'host': 'Enter your key here.',
+                'host': 'yq1596od2mxi47vhp-1.a1.typesense.net',
                 'port': '443',
                 'protocol': 'https'
             }],
-            'api_key': 'k26KOvUUNGPs2LbpWT1cu4sBpoQX7nct',
+            'api_key': 'Enter your key here.',
             'connection_timeout_seconds': 2
         })
         
@@ -98,7 +98,7 @@ class ActionFlightsCount(Action):
     ) -> List[Dict[Text, Any]]:
         
         # Load the flights data
-        flights_df = pd.read_csv('/Users/wiltonramos/Documents/chatbot/rasa/actions/generated_flights_data.csv')
+        flights_df = pd.read_csv('Enter the path of the generated_flights_data.csv file here.')
         
         # Get the slots from the tracker
         origin = tracker.get_slot('fromloc.city_name')
