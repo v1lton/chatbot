@@ -132,7 +132,7 @@ class ActionConnectToGPT(Action):
     ) -> List[Dict[Text, Any]]:
         
         # Create OpenAI client object
-        client = OpenAI(api_key='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')
+        client = OpenAI(api_key='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')
 
         # Get the user's message
         user_message = tracker.latest_message.get("text", "")

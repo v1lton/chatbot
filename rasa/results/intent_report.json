@@ -1,107 +1,128 @@
 {
-  "day": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 29,
-    "confused_with": {}
-  },
-  "atis_airline": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 148,
-    "confused_with": {}
+  "atis_aircraft": {
+    "precision": 0.9571428571428572,
+    "recall": 0.8589743589743589,
+    "f1-score": 0.9054054054054054,
+    "support": 78,
+    "confused_with": {
+      "atis_flight": 7,
+      "atis_airfare": 3
+    }
   },
   "atis_ground_service": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "precision": 0.9829787234042553,
+    "recall": 0.9829787234042553,
+    "f1-score": 0.9829787234042553,
     "support": 235,
-    "confused_with": {}
-  },
-  "other": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 99,
-    "confused_with": {}
-  },
-  "atis_flight_time": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 52,
-    "confused_with": {}
+    "confused_with": {
+      "atis_flight": 3,
+      "atis_abbreviation": 1
+    }
   },
   "atis_flight": {
-    "precision": 1.0,
-    "recall": 0.9985409979573971,
-    "f1-score": 0.9992699664184552,
+    "precision": 0.9796094198736358,
+    "recall": 0.9953311934636708,
+    "f1-score": 0.9874077290490664,
     "support": 3427,
     "confused_with": {
-      "atis_airfare": 5
+      "atis_airfare": 8,
+      "atis_ground_service": 3
     }
   },
   "deny": {
     "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "recall": 0.46153846153846156,
+    "f1-score": 0.631578947368421,
     "support": 13,
-    "confused_with": {}
+    "confused_with": {
+      "atis_abbreviation": 6,
+      "confirm": 1
+    }
   },
-  "atis_airfare": {
-    "precision": 0.9877450980392157,
-    "recall": 1.0,
-    "f1-score": 0.9938347718865598,
-    "support": 403,
-    "confused_with": {}
+  "atis_abbreviation": {
+    "precision": 0.8974358974358975,
+    "recall": 0.9722222222222222,
+    "f1-score": 0.9333333333333333,
+    "support": 108,
+    "confused_with": {
+      "atis_airline": 2,
+      "atis_airfare": 1
+    }
+  },
+  "atis_flight_time": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 52,
+    "confused_with": {
+      "atis_flight": 28,
+      "atis_airline": 10,
+      "atis_airfare": 8
+    }
   },
   "atis_quantity": {
     "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 75,
-    "confused_with": {}
+    "recall": 0.7142857142857143,
+    "f1-score": 0.8333333333333333,
+    "support": 49,
+    "confused_with": {
+      "atis_flight": 6,
+      "atis_airline": 4
+    }
   },
-  "atis_abbreviation": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 108,
-    "confused_with": {}
+  "other": {
+    "precision": 0.9607843137254902,
+    "recall": 0.98989898989899,
+    "f1-score": 0.9751243781094527,
+    "support": 99,
+    "confused_with": {
+      "atis_abbreviation": 1
+    }
+  },
+  "atis_airline": {
+    "precision": 0.8789808917197452,
+    "recall": 0.9324324324324325,
+    "f1-score": 0.9049180327868853,
+    "support": 148,
+    "confused_with": {
+      "atis_flight": 9,
+      "atis_airfare": 1
+    }
+  },
+  "atis_airfare": {
+    "precision": 0.9434889434889435,
+    "recall": 0.9528535980148883,
+    "f1-score": 0.9481481481481483,
+    "support": 403,
+    "confused_with": {
+      "atis_flight": 18,
+      "atis_abbreviation": 1
+    }
   },
   "confirm": {
-    "precision": 1.0,
+    "precision": 0.9285714285714286,
     "recall": 1.0,
-    "f1-score": 1.0,
+    "f1-score": 0.962962962962963,
     "support": 13,
     "confused_with": {}
   },
-  "atis_aircraft": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 78,
-    "confused_with": {}
-  },
-  "accuracy": 0.9989316239316239,
+  "accuracy": 0.9703783783783784,
   "macro avg": {
-    "precision": 0.9989787581699346,
-    "recall": 0.9998784164964497,
-    "f1-score": 0.9994253948587511,
-    "support": 4680
+    "precision": 0.8662720432147505,
+    "recall": 0.8055014267486359,
+    "f1-score": 0.8241082721728422,
+    "support": 4625
   },
   "weighted avg": {
-    "precision": 0.9989447167755992,
-    "recall": 0.9989316239316239,
-    "f1-score": 0.9989345273475064,
-    "support": 4680
+    "precision": 0.9598283229228084,
+    "recall": 0.9703783783783784,
+    "f1-score": 0.9644106320496028,
+    "support": 4625
   },
   "micro avg": {
-    "precision": 0.9989316239316239,
-    "recall": 0.9989316239316239,
-    "f1-score": 0.9989316239316239,
-    "support": 4680
+    "precision": 0.9703783783783784,
+    "recall": 0.9703783783783784,
+    "f1-score": 0.9703783783783784,
+    "support": 4625
   }
 }

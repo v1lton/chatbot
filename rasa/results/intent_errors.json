@@ -1,18 +1,994 @@
 [
   {
+    "text": "define airline us",
+    "intent": "atis_abbreviation",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.9767740964889526
+    }
+  },
+  {
+    "text": "what fare codes cover flights from philadelphia to san francisco",
+    "intent": "atis_abbreviation",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.5428621768951416
+    }
+  },
+  {
+    "text": "define airline ua",
+    "intent": "atis_abbreviation",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.9358963370323181
+    }
+  },
+  {
+    "text": "what is the cost of a round trip flight from pittsburgh to atlanta beginning on april twenty fifth and returning on may sixth",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7242549061775208
+    }
+  },
+  {
+    "text": "what is the first class fare on united flight 352 from denver to boston",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.5856873393058777
+    }
+  },
+  {
+    "text": "what are the round trip fares for flights from denver to philadelphia arriving after 1700 on continental",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.6139852404594421
+    }
+  },
+  {
+    "text": "i would like the least expensive airfare flight on sunday to pittsburgh from san francisco",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7765288352966309
+    }
+  },
+  {
+    "text": "list a round trip fare from kansas city to minneapolis flights",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.5599664449691772
+    }
+  },
+  {
+    "text": "i would like your rates between atlanta and boston on september third",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7375054955482483
+    }
+  },
+  {
+    "text": "what are the costs of flights from dallas to boston tomorrow",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9629244804382324
+    }
+  },
+  {
+    "text": "show prices for all flights from baltimore to dallas on july twenty ninth",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7628781795501709
+    }
+  },
+  {
+    "text": "please show me the cost of flight ua 201 from boston to denver and flight ua 343 from boston to denver",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.684711217880249
+    }
+  },
+  {
+    "text": "how much is the 718 am flight from las vegas to new york twa",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7649660706520081
+    }
+  },
+  {
+    "text": "please list the cost of all flights from philadelphia to denver airport next sunday",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.4803335666656494
+    }
+  },
+  {
+    "text": "what are the fares for flights serving a meal from boston to pittsburgh before noon on thursday",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.5249356031417847
+    }
+  },
+  {
+    "text": "can you show me the economy fare flights from baltimore to dallas",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9555109143257141
+    }
+  },
+  {
+    "text": "what are the cost of morning flights from atlanta to baltimore",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7836713790893555
+    }
+  },
+  {
+    "text": "can you show me the price of a flight to washington from atlanta on thursday morning",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.8006531000137329
+    }
+  },
+  {
+    "text": "could you please give me the cost of a round trip flight from denver to pittsburgh",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.5183363556861877
+    }
+  },
+  {
+    "text": "what does it cost to fly from boston to san francisco on united airlines flight 21",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.8092126846313477
+    }
+  },
+  {
+    "text": "display all fare codes",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_abbreviation",
+      "confidence": 0.80608069896698
+    }
+  },
+  {
+    "text": "show me the price of all flights from atlanta to washington dc",
+    "intent": "atis_airfare",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.89142906665802
+    }
+  },
+  {
+    "text": "list the number of flights leaving boston for dallas fort worth before 9 am in the morning",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9209968447685242
+    }
+  },
+  {
+    "text": "how many stops on continental 1765 from boston to san francisco",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.2736634910106659
+    }
+  },
+  {
+    "text": "how many flights does each airline have with business class service",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.48414042592048645
+    }
+  },
+  {
+    "text": "how many airlines have flights with service class yn",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.5381985902786255
+    }
+  },
+  {
+    "text": "how many united flights are there from san francisco please",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.5967442393302917
+    }
+  },
+  {
+    "text": "how many airports does oakland have",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "other",
+      "confidence": 0.4452518820762634
+    }
+  },
+  {
+    "text": "how many daily us air flights are there between philadelphia and pittsburgh",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7375351786613464
+    }
+  },
+  {
+    "text": "how many united flights are there to san francisco",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.8250184059143066
+    }
+  },
+  {
+    "text": "how many fares are there one way from tacoma to montreal",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.7721906304359436
+    }
+  },
+  {
+    "text": "how many fare codes belong to economy class",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_abbreviation",
+      "confidence": 0.48307400941848755
+    }
+  },
+  {
+    "text": "how many airlines fly from new york to los angeles by way of milwaukee",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.7893127799034119
+    }
+  },
+  {
+    "text": "how many flights does eastern airlines have from boston to atlanta",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.47723034024238586
+    }
+  },
+  {
+    "text": "how many stops are on all flights from boston to san francisco that depart before 12 o'clock noon",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.8837940096855164
+    }
+  },
+  {
+    "text": "how many flights are there between san francisco and philadelphia on august eighteenth",
+    "intent": "atis_quantity",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7023593783378601
+    }
+  },
+  {
+    "text": "how do i get to philadelphia downtown from the airport",
+    "intent": "atis_ground_service",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.5572192668914795
+    }
+  },
+  {
+    "text": "i would like to find out the ground travel available in atlanta",
+    "intent": "atis_ground_service",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.5247785449028015
+    }
+  },
+  {
+    "text": "i need to get downtown from the denver airport",
+    "intent": "atis_ground_service",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.6712271571159363
+    }
+  },
+  {
+    "text": "show me a list of rental car fares at boston airport",
+    "intent": "atis_ground_service",
+    "intent_prediction": {
+      "name": "atis_abbreviation",
+      "confidence": 0.40557050704956055
+    }
+  },
+  {
+    "text": "can you list all the airlines that have flights from boston to san francisco",
+    "intent": "atis_airline",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7987166047096252
+    }
+  },
+  {
+    "text": "please list all airline flights between denver and boston",
+    "intent": "atis_airline",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.6814379692077637
+    }
+  },
+  {
+    "text": "show me first class airlines from san francisco to pittsburgh on next tuesday first class only",
+    "intent": "atis_airline",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.7026758790016174
+    }
+  },
+  {
+    "text": "show all airlines with flights between denver and dallas",
+    "intent": "atis_airline",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.5894086956977844
+    }
+  },
+  {
+    "text": "what airline is the flight originating in atlanta on november seventh at noon and arriving in san francisco at 210 pm",
+    "intent": "atis_airline",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9293763041496277
+    }
+  },
+  {
+    "text": "show me airlines going from pittsburgh going to denver and then continuing to san francisco on monday",
+    "intent": "atis_airline",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.45110249519348145
+    }
+  },
+  {
+    "text": "please show me airlines with flight service from boston to denver from denver to philadelphia and from philadelphia to boston",
+    "intent": "atis_airline",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9121039509773254
+    }
+  },
+  {
+    "text": "are there any airlines that have flights from boston to philadelphia that leave before 630 am",
+    "intent": "atis_airline",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.4212058186531067
+    }
+  },
+  {
+    "text": "please show me airlines with round trip flights from boston to denver stop philadelphia",
+    "intent": "atis_airline",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.4875214993953705
+    }
+  },
+  {
+    "text": "is there an airline that has a flight from philadelphia to san francisco with a stop in dallas",
+    "intent": "atis_airline",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.6668633222579956
+    }
+  },
+  {
+    "text": "what is the arrival time in san francisco for the 755 am flight leaving washington",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.2725452780723572
+    }
+  },
+  {
+    "text": "what are the times that you have planes leaving from san francisco going to pittsburgh on july seventh",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.38907551765441895
+    }
+  },
+  {
+    "text": "on united airlines give me the flight times from boston to dallas",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.602603554725647
+    }
+  },
+  {
+    "text": "what are the schedule of flights from boston to san francisco for august first",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.5198813676834106
+    }
+  },
+  {
+    "text": "what is the flight schedule of the f28 from pittsburgh to baltimore",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.23022229969501495
+    }
+  },
+  {
+    "text": "show me times for flights from san francisco to atlanta",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.3329085111618042
+    }
+  },
+  {
+    "text": "i would like the time of all flights from san francisco to pittsburgh on sunday",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9321852922439575
+    }
+  },
+  {
+    "text": "could you give me the schedule of flights for american and delta to dfw on august fifteenth",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.8156721591949463
+    }
+  },
+  {
+    "text": "please list the flight times from pittsburgh to newark",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.20256781578063965
+    }
+  },
+  {
+    "text": "please list the flight times from boston to pittsburgh",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.36048388481140137
+    }
+  },
+  {
+    "text": "please list the flight schedule from baltimore to san francisco on friday nights",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.5978917479515076
+    }
+  },
+  {
+    "text": "what times on wednesday could i take a plane from denver to oakland",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.4488880932331085
+    }
+  },
+  {
+    "text": "please tell me the times of the flights between boston and baltimore",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.4389877915382385
+    }
+  },
+  {
+    "text": "show me times for coach flights between boston and baltimore on wednesday",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.6055645942687988
+    }
+  },
+  {
+    "text": "show me the schedule for airlines leaving pittsburgh going to san francisco for next monday",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.6623481512069702
+    }
+  },
+  {
+    "text": "what is the departure time of the latest flight of united airlines from denver to boston",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.26253098249435425
+    }
+  },
+  {
+    "text": "what times does continental depart from boston to san francisco",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_abbreviation",
+      "confidence": 0.17948299646377563
+    }
+  },
+  {
+    "text": "what time does flight aa 459 depart",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_abbreviation",
+      "confidence": 0.49464619159698486
+    }
+  },
+  {
+    "text": "please list the flight times from newark to boston",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.3531529903411865
+    }
+  },
+  {
+    "text": "what is the minimum connection time for houston intercontinental",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "other",
+      "confidence": 0.4380461275577545
+    }
+  },
+  {
+    "text": "now i 'd like a schedule for the flights on tuesday morning from oakland no from dallas fort worth to atlanta",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.6988586783409119
+    }
+  },
+  {
+    "text": "what is the earliest departure time from boston to denver",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.18165311217308044
+    }
+  },
+  {
+    "text": "please list the flight times for boston to pittsburgh",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.2513357698917389
+    }
+  },
+  {
+    "text": "show me the flight schedule from pittsburgh to san francisco",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.22508025169372559
+    }
+  },
+  {
+    "text": "what time does the tuesday morning 755 flight leaving washington arrive in san francisco",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7447389364242554
+    }
+  },
+  {
+    "text": "i would like a schedule of flights from san francisco to boston on wednesday",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.6328591704368591
+    }
+  },
+  {
+    "text": "what time are the flights leaving from denver to pittsburgh on july seventh",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.8189605474472046
+    }
+  },
+  {
+    "text": "i would like a schedule of flights from denver to san francisco on tuesday",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.14473551511764526
+    }
+  },
+  {
+    "text": "whendoes continental fly from philadelphia to denver on sundays",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7906188368797302
+    }
+  },
+  {
+    "text": "what time are the flights from baltimore to san francisco",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.6723466515541077
+    }
+  },
+  {
+    "text": "please give me the flight times the morning on united airlines for september twentieth from philadelphia to san francisco",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.3157787322998047
+    }
+  },
+  {
+    "text": "what 's the schedule of flights from atlanta to boston on august first",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.46314868330955505
+    }
+  },
+  {
+    "text": "what is the total schedule for delta 's flights to all airports",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "other",
+      "confidence": 0.4416070580482483
+    }
+  },
+  {
+    "text": "i would like the time your earliest flight from washington to philadelphia",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9911448359489441
+    }
+  },
+  {
+    "text": "what is the schedule of flights from boston to denver next monday",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.22255530953407288
+    }
+  },
+  {
+    "text": "what time does the flight leave denver going to san francisco on continental airlines",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.5456147193908691
+    }
+  },
+  {
+    "text": "what is the schedule for flights between pittsburgh and boston on the evening of july ninth",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.25491926074028015
+    }
+  },
+  {
+    "text": "what is delta 's schedule of morning flights to atlanta",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "other",
+      "confidence": 0.27153924107551575
+    }
+  },
+  {
+    "text": "what is american 's schedule of morning flights to atlanta",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.47005337476730347
+    }
+  },
+  {
+    "text": "what is the schedule of ground transportation from washington airport into downtown",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_ground_service",
+      "confidence": 0.9319921731948853
+    }
+  },
+  {
+    "text": "what time does twa depart from boston to go to san francisco",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.6495348811149597
+    }
+  },
+  {
+    "text": "what time does the earliest flight which goes from atlanta to denver leave",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.6149300932884216
+    }
+  },
+  {
+    "text": "i would like the evening schedule of flights from san francisco to washington",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7757342457771301
+    }
+  },
+  {
+    "text": "please give me the flight times i would like to fly from boston to baltimore in the morning before 8",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9345758557319641
+    }
+  },
+  {
+    "text": "what times does the late afternoon flight leave from washington for denver",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.29060283303260803
+    }
+  },
+  {
+    "text": "what time are flights from denver to san francisco on continental airlines",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.5906427502632141
+    }
+  },
+  {
+    "text": "list departure times from denver to philadelphia which are later than 10 o'clock and earlier than 2 pm",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.3379083573818207
+    }
+  },
+  {
+    "text": "i would like the time of your earliest flight in the morning from philadelphia to washington on american airlines",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9608482718467712
+    }
+  },
+  {
+    "text": "i want to know the time of the latest flight i can take from washington to san francisco where i can get a dinner meal",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9924489259719849
+    }
+  },
+  {
+    "text": "what time is the last flight from washington to san francisco",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.7085704803466797
+    }
+  },
+  {
+    "text": "all right give me the flight times in the morning on september twentieth from pittsburgh to san francisco",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9579806923866272
+    }
+  },
+  {
+    "text": "can you tell me the time a flight would leave from atlanta to boston in the afternoon",
+    "intent": "atis_flight_time",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9212265610694885
+    }
+  },
+  {
+    "text": "is there a plane from boston to washington",
+    "intent": "atis_aircraft",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.4352455735206604
+    }
+  },
+  {
+    "text": "what kind of airplane goes from philadelphia to san francisco monday stopping in dallas in the afternoon first class flight",
+    "intent": "atis_aircraft",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.49512794613838196
+    }
+  },
+  {
+    "text": "i want to go and take a plane in atlanta and fly to boston",
+    "intent": "atis_aircraft",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9777211546897888
+    }
+  },
+  {
+    "text": "i 'm going to leave philadelphia and i want to go to san francisco and i want to fly first class american and i want a stop in dallas can you please tell me what type of aircraft you will be flying",
+    "intent": "atis_aircraft",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.99277663230896
+    }
+  },
+  {
+    "text": "i need a plane that arrives in san francisco by 9 o'clock pm on friday and leaves from baltimore",
+    "intent": "atis_aircraft",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.9618602395057678
+    }
+  },
+  {
+    "text": "what first class airplane goes from philadelphia to san francisco and stops in dallas in the afternoon on monday",
+    "intent": "atis_aircraft",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.43106013536453247
+    }
+  },
+  {
+    "text": "what kind of airplanes are used by delta airlines flying between washington and denver",
+    "intent": "atis_aircraft",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.5278984904289246
+    }
+  },
+  {
+    "text": "what types of aircraft can i get a first class ticket from philadelphia to dallas",
+    "intent": "atis_aircraft",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.7254932522773743
+    }
+  },
+  {
+    "text": "what kind of plane is used on the earliest flight from boston to san francisco afternoon",
+    "intent": "atis_aircraft",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.38102492690086365
+    }
+  },
+  {
+    "text": "i need to find a plane from boston to san francisco on friday",
+    "intent": "atis_aircraft",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.30944105982780457
+    }
+  },
+  {
+    "text": "can you please tell me the type of aircraft used flying from atlanta to denver on eastern flight 825 leaving at 555",
+    "intent": "atis_aircraft",
+    "intent_prediction": {
+      "name": "atis_flight",
+      "confidence": 0.494235098361969
+    }
+  },
+  {
     "text": "which flight is a one way fare at 329 dollars from denver to pittsburgh",
     "intent": "atis_flight",
     "intent_prediction": {
       "name": "atis_airfare",
-      "confidence": 0.5635563731193542
+      "confidence": 0.7865358591079712
     }
   },
   {
-    "text": "show me all flights with fares from pittsburgh to san francisco",
+    "text": "on flight us air 2153 from san francisco to baltimore what time and what city does the plane stop in between",
     "intent": "atis_flight",
     "intent_prediction": {
       "name": "atis_airfare",
-      "confidence": 0.5624467134475708
+      "confidence": 0.4608563780784607
+    }
+  },
+  {
+    "text": "can you tell me how to get from the airport in philadelphia to downtown",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_ground_service",
+      "confidence": 0.3477613627910614
+    }
+  },
+  {
+    "text": "on the flight from baltimore to san francisco on us air leaving at 420 what type of aircraft is used",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_aircraft",
+      "confidence": 0.7188792824745178
+    }
+  },
+  {
+    "text": "which flights from pittsburgh to atlanta have the lowest coach class fares",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.9437838792800903
+    }
+  },
+  {
+    "text": "what are the classes of service for continental airlines",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_airline",
+      "confidence": 0.31395307183265686
+    }
+  },
+  {
+    "text": "on eastern flight 825 from atlanta to denver can you tell me what type of aircraft used before 12 noon",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_aircraft",
+      "confidence": 0.6007899045944214
+    }
+  },
+  {
+    "text": "i 'd like to travel from boston to baltimore on us air 269 please tell me the times",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.4992467164993286
+    }
+  },
+  {
+    "text": "i 'd like to fly from boston to san francisco could you find me the cheapest fare",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.6504706144332886
+    }
+  },
+  {
+    "text": "show me the lowest price from dallas to baltimore",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_airfare",
+      "confidence": 0.9794948101043701
+    }
+  },
+  {
+    "text": "how can i get from the denver airport to downtown",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_ground_service",
+      "confidence": 0.3719748556613922
     }
   },
   {
@@ -20,7 +996,7 @@
     "intent": "atis_flight",
     "intent_prediction": {
       "name": "atis_airfare",
-      "confidence": 0.9846182465553284
+      "confidence": 0.9409330487251282
     }
   },
   {
@@ -28,15 +1004,95 @@
     "intent": "atis_flight",
     "intent_prediction": {
       "name": "atis_airfare",
-      "confidence": 0.9661611318588257
+      "confidence": 0.7658692002296448
     }
   },
   {
-    "text": "show me first class round trip flights from new york to miami i want the cheapest first class fare please",
+    "text": "what are the different classes that an airline offers",
     "intent": "atis_flight",
     "intent_prediction": {
-      "name": "atis_airfare",
-      "confidence": 0.5316513180732727
+      "name": "atis_airline",
+      "confidence": 0.5329355597496033
+    }
+  },
+  {
+    "text": "how can i get from the airport in pittsburgh to downtown",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_ground_service",
+      "confidence": 0.41583216190338135
+    }
+  },
+  {
+    "text": "on united airlines flying from denver to san francisco before 10 am what type of aircraft is used",
+    "intent": "atis_flight",
+    "intent_prediction": {
+      "name": "atis_aircraft",
+      "confidence": 0.7572565674781799
+    }
+  },
+  {
+    "text": "What does \"ETOPS\" stand for and what does it mean?",
+    "intent": "other",
+    "intent_prediction": {
+      "name": "atis_abbreviation",
+      "confidence": 0.7353454828262329
+    }
+  },
+  {
+    "text": "no",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "atis_abbreviation",
+      "confidence": 0.3301083445549011
+    }
+  },
+  {
+    "text": "no thanks",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "atis_abbreviation",
+      "confidence": 0.3314515948295593
+    }
+  },
+  {
+    "text": "n",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "atis_abbreviation",
+      "confidence": 0.43973299860954285
+    }
+  },
+  {
+    "text": "no, thanks",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "atis_abbreviation",
+      "confidence": 0.3314515948295593
+    }
+  },
+  {
+    "text": "that's incorrect",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "confirm",
+      "confidence": 0.29285988211631775
+    }
+  },
+  {
+    "text": "no, that's not what I meant",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "atis_abbreviation",
+      "confidence": 0.3694492280483246
+    }
+  },
+  {
+    "text": "no, that's not what I asked for",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "atis_abbreviation",
+      "confidence": 0.3000889718532562
     }
   }
 ]

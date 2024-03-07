@@ -12,7 +12,6 @@ intents:
   - other
   - confirm
   - deny
-  - day
 
 entities:
   - flight_time
@@ -138,8 +137,6 @@ responses:
   - text: What day of the week are you planning to travel?
   utter_intention_not_ready:
   - text: I can't help you with that, I'm sorry :(
-  utter_asks_for_day:
-  - text: What day of the week do you want to know?
   utter_confirm_flight_and_day:
   - text: You want to know how many flights are available from {fromloc.city_name} to {toloc.city_name} on {depart_date.day_name}? 
 

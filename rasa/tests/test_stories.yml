@@ -25,11 +25,6 @@ stories:
     entities:
     - fromloc.city_name: "boston"
     - toloc.city_name: "dallas"
-  - action: utter_asks_for_day
-  - user: |
-      On monday
-    intent: day
-    entities:
     - depart_date.day_name: "monday"
   - action: utter_confirm_flight_and_day
   - user: |
@@ -40,17 +35,12 @@ stories:
 - story: Test user asks for how many flights are available sad path
   steps:
   - user: |
-      How many flights from boston to dallas?
+      How many flights from boston to dallas on friday?
     intent: atis_quantity
     entities:
     - fromloc.city_name: "boston"
     - toloc.city_name: "dallas"
-  - action: utter_asks_for_day
-  - user: |
-      On monday
-    intent: day
-    entities:
-    - depart_date.day_name: "monday"
+    - depart_date.day_name: "friday"
   - action: utter_confirm_flight_and_day
   - user: |
       No
