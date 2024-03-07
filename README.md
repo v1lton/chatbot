@@ -23,3 +23,28 @@ O chatbot é capaz de:
 O nosso chatbot construído com o auxílio do Rasa segue o seguinte fluxo de conversação:
 
 ![Esquema do Modelo de Conversa](chat_flow.png)
+
+## Rodando o rasa
+
+É necessário rodar o servidor de actions:
+```
+cd rasa && rasa run actions
+```
+
+Então, podemos conversar com o chatbot a partir de:
+```
+cd rasa && shell
+```
+
+### Actions
+
+É necessário inserir as keys para API da OpenAI e do Typesense. Caso seja necessário, pedir a wrs@cin.ufpe.br ou a vsob@cin.ufpe.br.
+
+Além disso, é necessário adicionar o path correto do csv na linha 101 do arquivo `actions.py`.
+
+
+
+
+
+
+
