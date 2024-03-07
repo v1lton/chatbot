@@ -22,7 +22,7 @@ class ActionSearchQA(Action):
         # Connect to Typesense
         client = typesense.Client({
             'nodes': [{
-                'host': 'yq1596od2mxi47vhp-1.a1.typesense.net',
+                'host': 'Enter your key here.',
                 'port': '443',
                 'protocol': 'https'
             }],
@@ -132,7 +132,7 @@ class ActionConnectToGPT(Action):
     ) -> List[Dict[Text, Any]]:
         
         # Create OpenAI client object
-        client = OpenAI(api_key='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')
+        client = OpenAI(api_key='Enter your key here.')
 
         # Get the user's message
         user_message = tracker.latest_message.get("text", "")
