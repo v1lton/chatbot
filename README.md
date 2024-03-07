@@ -4,6 +4,10 @@
 
 Este projeto foi desenvolvido como parte da disciplina IF144 - Processamento de Linguagem Natural, do curso de Ciência da Computação na Universidade Federal de Pernambuco (UFPE). O objetivo é construir um chatbot focado em um domínio específico. No nosso caso, escolhemos [um conjunto de ATIS](https://github.com/howl-anderson/ATIS_dataset) disponível publicamente. 
 
+## Apresentação do Projeto
+
+A apresentação em vídeo projeto pode ser acessado em: https://drive.google.com/file/d/1CL4Ve8sK_0mzD435nG9ZF6c5BI3kaViP/view?usp=sharing
+
 ## Funcionalidades
 
 O chatbot é capaz de:
@@ -33,7 +37,7 @@ cd rasa && rasa run actions
 
 Então, podemos conversar com o chatbot a partir de:
 ```
-cd rasa && shell
+cd rasa && rasa shell
 ```
 
 ### Actions
